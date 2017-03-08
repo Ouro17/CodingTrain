@@ -30,7 +30,7 @@ cubes for you :)
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6akvoNKE4GAxf6ZeBYoJ4uh)
 
 - 5.17 [Introduction to Matter.js](https://ouro17.github.io/CodingTrain/tutorial/5.17/)
-- 5.17 [Introduction to Matter.js Continued](https://ouro17.github.io/CodingTrain/tutorial/5.18/)
+- 5.18 [Introduction to Matter.js Continued](https://ouro17.github.io/CodingTrain/tutorial/5.18/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)
