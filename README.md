@@ -4,6 +4,9 @@ In this repository I will put my implementation of the great videos of
 
 # View it Online
 You can view the sketches online thanks to github pages.
+Sometimes the sketch lacks of self-explanation. If nothing happen when you start
+the sketch, just click in the board zone! I'm sure that it will produce some nice
+cubes for you :)
 
 ## Challenges
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
