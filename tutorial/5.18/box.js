@@ -12,11 +12,10 @@ function Box(x, y, w, h) {
 
 Box.prototype.show = function() {
     let pos   = this.body.position;
-    let angle = this.body.angle;
-
+    
     push();
     translate(pos.x, pos.y);
-    rotate(angle);
+    rotate(this.body.angle);
     rectMode(CENTER);
     strokeWeight(1);
     stroke(255);

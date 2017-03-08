@@ -15,12 +15,12 @@ function setup() {
     world  = engine.world;
     Engine.run(engine);
 
-    ground = Bodies.rectangle(200, height, width, 10, {isStatic: true});
+    ground = Bodies.rectangle(200, height - 50, width, 100, {isStatic: true});
     World.add(world, ground);
 }
 
-function mouseDragged() {
-    boxes.push(new Box(mouseX, mouseY, 20, 20));
+function mousePressed() {
+    boxes.push(new Box(mouseX, mouseY, random(10, 40), random(10, 40)));
 }
 
 function draw() {
@@ -33,5 +33,5 @@ function draw() {
     noStroke(255);
     fill(170);
     rectMode(CENTER);
-    rect(200, height, width, 10);
+    rect(ground.position.x, ground.position.y, width, 100);
 }
