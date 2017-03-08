@@ -8,16 +8,16 @@ You can view the sketches online thanks to github pages.
 ## Challenges
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
 
-27. [Fireworks!](https://ouro17.github.io/CodingTrain/Challenges/27/)
-55. [Mathematical Rose Patterns](https://ouro17.github.io/CodingTrain/Challenges/55/)
-56. [Attraction and Repulsion Forces](https://ouro17.github.io/CodingTrain/Challenges/56/)
-<!--57. [Mapping Earthquake Data](https://ouro17.github.io/CodingTrain/Challenges/57/)-->
-59. [Steering Behaviours](https://ouro17.github.io/CodingTrain/Challenges/59/)
+- 27. [Fireworks!](https://ouro17.github.io/CodingTrain/Challenges/27/)
+- 55. [Mathematical Rose Patterns](https://ouro17.github.io/CodingTrain/Challenges/55/)
+- 56. [Attraction and Repulsion Forces](https://ouro17.github.io/CodingTrain/Challenges/56/)
+<!-- - 57. [Mapping Earthquake Data](https://ouro17.github.io/CodingTrain/Challenges/57/)-->
+- 59. [Steering Behaviours](https://ouro17.github.io/CodingTrain/Challenges/59/)
 
 ## Guess
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bYBG4PsCJpsvMka3boE9pR)
 
-4. [Matrix Digital Rain](https://ouro17.github.io/CodingTrain/guess/4/)
+- 4. [Matrix Digital Rain](https://ouro17.github.io/CodingTrain/guess/4/)
 
 ## Foundations of Programming in Javascript
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
