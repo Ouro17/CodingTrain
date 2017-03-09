@@ -31,6 +31,8 @@ cubes for you :)
 
 - 5.17 [Introduction to Matter.js](https://ouro17.github.io/CodingTrain/tutorial/5.17/)
 - 5.18 [Introduction to Matter.js Continued](https://ouro17.github.io/CodingTrain/tutorial/5.18/)
+- 5.19 [Matter.js: Deleting Bodies](https://ouro17.github.io/CodingTrain/tutorial/5.19/)
+- 5.20 [Matter.js: Constraints](https://ouro17.github.io/CodingTrain/tutorial/5.20/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)
