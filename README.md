@@ -17,6 +17,7 @@ cubes for you :)
 <!-- - 57. [Mapping Earthquake Data](https://ouro17.github.io/CodingTrain/Challenges/57/)-->
 - 59. [Steering Behaviours](https://ouro17.github.io/CodingTrain/Challenges/59/)
 - 61.1 [Plinko with Matter.js Part 1](https://ouro17.github.io/CodingTrain/Challenges/61.1/)
+- 61.2 [Plinko with Matter.js Part 2](https://ouro17.github.io/CodingTrain/Challenges/61.2/)
 
 ## Guess
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bYBG4PsCJpsvMka3boE9pR)
