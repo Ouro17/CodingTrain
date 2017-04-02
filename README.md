@@ -11,20 +11,23 @@ cubes for you :)
 ## Challenges
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
 
-- 27. [Fireworks!](https://ouro17.github.io/CodingTrain/Challenges/27/)
-- 55. [Mathematical Rose Patterns](https://ouro17.github.io/CodingTrain/Challenges/55/)
-- 56. [Attraction and Repulsion Forces](https://ouro17.github.io/CodingTrain/Challenges/56/)
+- 27 [Fireworks!](https://ouro17.github.io/CodingTrain/Challenges/27/)
+- 55 [Mathematical Rose Patterns](https://ouro17.github.io/CodingTrain/Challenges/55/)
+- 56 [Attraction and Repulsion Forces](https://ouro17.github.io/CodingTrain/Challenges/56/)
 <!-- - 57. [Mapping Earthquake Data](https://ouro17.github.io/CodingTrain/Challenges/57/)-->
-- 59. [Steering Behaviours](https://ouro17.github.io/CodingTrain/Challenges/59/)
+- 59 [Steering Behaviours](https://ouro17.github.io/CodingTrain/Challenges/59/)
 - 62.1 [Plinko with Matter.js Part 1](https://ouro17.github.io/CodingTrain/Challenges/62.1/)
 - 62.2 [Plinko with Matter.js Part 2](https://ouro17.github.io/CodingTrain/Challenges/62.2/)
 - 62.3 [Plinko with Matter.js Part 3](https://ouro17.github.io/CodingTrain/Challenges/62.3/)
 - 62.4 [Plinko with Matter.js Part 4](https://ouro17.github.io/CodingTrain/Challenges/62.4/) *__CARE WITH SOUND!!__*
+<!-- - 67 [Pong!](https://ouro17.github.io/CodingTrain/Challenges/67/)-->
+- 68.1 [Breadth-First Search Part 1 ](https://ouro17.github.io/CodingTrain/Challenges/68.1/)
+- 68.2 [Breadth-First Search Part 2 ](https://ouro17.github.io/CodingTrain/Challenges/68.2/)
 
 ## Guess
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bYBG4PsCJpsvMka3boE9pR)
 
-- 4. [Matrix Digital Rain](https://ouro17.github.io/CodingTrain/guess/4/)
+- 4 [Matrix Digital Rain](https://ouro17.github.io/CodingTrain/guess/4/)
 
 ## Foundations of Programming in Javascript
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
