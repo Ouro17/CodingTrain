@@ -46,6 +46,7 @@ cubes for you :)
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh)
 
 - 10.5 [Neural Networks: Multilayer Perceptron Part 2](https://ouro17.github.io/CodingTrain/tutorial/10.5/)
+- 10.6 [Neural Networks: Matrix Math Part 1](https://ouro17.github.io/CodingTrain/tutorial/10.6/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)
