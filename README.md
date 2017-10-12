@@ -21,8 +21,9 @@ cubes for you :)
 - 62.3 [Plinko with Matter.js Part 3](https://ouro17.github.io/CodingTrain/Challenges/62.3/)
 - 62.4 [Plinko with Matter.js Part 4](https://ouro17.github.io/CodingTrain/Challenges/62.4/) *__CARE WITH SOUND!!__*
 <!-- - 67 [Pong!](https://ouro17.github.io/CodingTrain/Challenges/67/)-->
-- 68.1 [Breadth-First Search Part 1 ](https://ouro17.github.io/CodingTrain/Challenges/68.1/)
-- 68.2 [Breadth-First Search Part 2 ](https://ouro17.github.io/CodingTrain/Challenges/68.2/)
+- 68.1 [Breadth-First Search Part 1](https://ouro17.github.io/CodingTrain/Challenges/68.1/)
+- 68.2 [Breadth-First Search Part 2](https://ouro17.github.io/CodingTrain/Challenges/68.2/)
+- 78   [Simple Particle System](https://ouro17.github.io/CodingTrain/Challenges/78/)
 
 ## Guess
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bYBG4PsCJpsvMka3boE9pR)
