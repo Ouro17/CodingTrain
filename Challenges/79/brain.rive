@@ -1,0 +1,12 @@
+// Chatbot's brain
+! version = 2.0
+
+! var num = 5
+
++ #
+* <star1> > <bot num> => pick a lower number
+* <star1> < <bot num> => pick a higher number
+* <star1> == <bot num> => <set ok=1>you got it! Play again!
+
++ *
+- Guess a number between 0 and 9
