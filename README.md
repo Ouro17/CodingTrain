@@ -49,6 +49,8 @@ cubes for you :)
 - 10.5 [Neural Networks: Multilayer Perceptron Part 2](https://ouro17.github.io/CodingTrain/tutorial/10.5/)
 - 10.6 [Neural Networks: Matrix Math Part 1](https://ouro17.github.io/CodingTrain/tutorial/10.6/)
 - 10.7 [Neural Networks: Matrix Math Part 2](https://ouro17.github.io/CodingTrain/tutorial/10.7/)
+- 10.8 [Neural Networks: Updating Code to ES6](https://ouro17.github.io/CodingTrain/tutorial/10.8/)
+- 10.9 [Neural Networks: Matrix Math Part 3](https://ouro17.github.io/CodingTrain/tutorial/10.9/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)
