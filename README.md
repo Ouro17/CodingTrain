@@ -53,6 +53,7 @@ cubes for you :)
 - 10.9 [Neural Networks: Matrix Math Part 3](https://ouro17.github.io/CodingTrain/tutorial/10.9/)
 - 10.10 [Neural Networks: Matrix Math Part 4](https://ouro17.github.io/CodingTrain/tutorial/10.10/)
 - 10.11 [Neural Networks: Matrix Class Improvements](https://ouro17.github.io/CodingTrain/tutorial/10.11/)
+- 10.13 [Neural Networks: Feedforward Algorithm Part 2 - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/10.13/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)
