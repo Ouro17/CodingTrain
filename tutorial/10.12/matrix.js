@@ -138,7 +138,7 @@ class Matrix {
 
     static subtract(A, B) {
         if (A instanceof Matrix && B instanceof Matrix) {
-            if (A.cols !== B.cols || A.rows !== B.cols) {
+            if (A.cols !== B.cols || A.rows !== B.rows) {
                 console.log('Can subtract matrices with distinct numbers of rows or cols');
             }
             else {
