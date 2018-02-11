@@ -48,7 +48,5 @@ function matrixTest() {
     .transpose()
     .print();
 
-    console.log("Copy");
-    new Matrix(A).print().add(1).print();
-    A.print();
+    
 }

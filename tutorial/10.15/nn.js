@@ -9,6 +9,7 @@ class NeuralNetwork {
 
         this.bias_h = new Matrix(this.hidden_nodes, 1, true);
         this.bias_o = new Matrix(this.output_nodes, 1, true);
+        this.learning_rate = 0.1;
     }
 
     feedfoward(input_array) {
@@ -39,8 +40,6 @@ class NeuralNetwork {
         let hidden_errors = Matrix.transpose(this.weights_ho)
                             .multiply(output_errors)
                             ;
-
-
     }
 }
 

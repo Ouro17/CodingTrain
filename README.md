@@ -55,6 +55,8 @@ cubes for you :)
 - 10.11 [Neural Networks: Matrix Class Improvements](https://ouro17.github.io/CodingTrain/tutorial/10.11/)
 - 10.13 [Neural Networks: Feedforward Algorithm Part 2 - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/10.13/)
 - 10.15 [Neural Networks: Backpropagation Part 2 - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/10.15/)
+- 10.17 [Neural Networks: Backpropagation Part 4 - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/10.17/)
+- 10.18 [Neural Networks: Backpropagation Part 5 - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/10.18/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)

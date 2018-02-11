@@ -1,16 +1,38 @@
-let brain;
+let nn;
+const training_data = [
+    {
+        inputs: [0, 0],
+        targets: [0]
+    },
+    {
+        inputs: [1, 1],
+        targets: [0]
+    },
+    {
+        inputs: [0, 1],
+        targets: [1]
+    },
+    {
+        inputs: [1, 0],
+        targets: [1]
+    }
+
+];
 
 function setup() {
+    nn = new NeuralNetwork(2, 2, 1, 0.1);
 
-    brain = new NeuralNetwork(2, 2, 2);
-    let inputs = [1, 0];
-    let targets = [1, 0];
+    for (let i = 0; i < 500000; ++i) {
+        let data = random(training_data);
+        nn.train(data.inputs, data.targets);
+    }
 
-    // let output = brain.feedfoward([1, 0]);
-    // console.log(output);
+    console.table(nn.feedforward([0, 0]));
+    console.table(nn.feedforward([0, 1]));
+    console.table(nn.feedforward([1, 0]));
+    console.table(nn.feedforward([1, 1]));
 
-    brain.train(inputs, targets);
-
+    nn.print();
 }
 
 function matrixTest() {
@@ -48,7 +70,5 @@ function matrixTest() {
     .transpose()
     .print();
 
-    console.log("Copy");
-    new Matrix(A).print().add(1).print();
-    A.print();
+    
 }

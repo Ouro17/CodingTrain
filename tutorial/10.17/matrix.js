@@ -1,16 +1,25 @@
 class Matrix {
     constructor(rows, cols, operation) {
-if (rows instanceof Array && rows[0] instanceof Array) {
+
+        if (rows instanceof Matrix) {
+            // Copy the matrix
+            this.rows = rows.rows;
+            this.cols = rows.cols;
+
+            this.copy(rows.data);
+        }
+        else if (rows instanceof Array && rows[0] instanceof Array) {
             // Two dimensional array
-            this.data = rows;
             this.rows = rows.length;
             this.cols = rows[0].length;
+            
+            this.copy(rows);
         }
         else if (rows instanceof Array && !(rows[0] instanceof Array)) {
             // One dimensional array
-            this.data = [];
             this.rows = rows.length;
             this.cols = 1;
+            this.data = [];
 
             for (let i = 0; i < rows.length; i++) {
                 this.data[i] = [];
@@ -36,6 +45,21 @@ if (rows instanceof Array && rows[0] instanceof Array) {
                 }
             }
         }
+        
+    }
+
+    copy(matrixArray) {
+        this.data = [];
+
+        for (let i = 0; i < this.rows; ++i) {
+            this.data[i] = [];
+            
+            for(let j = 0; j < this.cols; ++j) {
+                this.data[i][j] = matrixArray[i][j];
+            }
+        }
+
+        return this;
     }
 
     print() {
@@ -87,6 +111,10 @@ if (rows instanceof Array && rows[0] instanceof Array) {
                 this.map((value) =>  value * A);
     }
 
+    hadamard(A) {
+        return this.replace(Matrix.hadamard(this, A));
+    }
+
     transpose() {
         return this.replace(Matrix.transpose(this));
     }
@@ -116,7 +144,7 @@ if (rows instanceof Array && rows[0] instanceof Array) {
     static add(A, B) {
         if (A instanceof Matrix && B instanceof Matrix) {
             if (A.cols !== B.cols || A.rows !== B.rows) {
-                console.error('Cant add matrices with distinct numbers of rows or cols');
+                console.log('Can add matrices with distinct numbers of rows or cols');
             }
             else {
                 let result = new Matrix(A.rows, A.cols);
@@ -138,7 +166,7 @@ if (rows instanceof Array && rows[0] instanceof Array) {
     static subtract(A, B) {
         if (A instanceof Matrix && B instanceof Matrix) {
             if (A.cols !== B.cols || A.rows !== B.rows) {
-                console.error('Cant subtract matrices with distinct numbers of rows or cols');
+                console.log('Can subtract matrices with distinct numbers of rows or cols');
             }
             else {
                 let result = new Matrix(A.rows, A.cols);
@@ -157,10 +185,34 @@ if (rows instanceof Array && rows[0] instanceof Array) {
         }
     }
 
+    // Element wise multiplication
+    static hadamard(A, B) {
+         if (A instanceof Matrix && B instanceof Matrix) {
+            if (A.cols !== B.cols || A.rows !== B.rows) {
+                console.log('Matrices must have same dimensions');
+            }
+            else {
+                let result = new Matrix(A.rows, A.cols);
+
+                for (let i = 0; i < result.rows; ++i) {
+                    for (let j = 0; j < result.cols; ++j) {
+                        result.data[i][j] = A.data[i][j] * B.data[i][j];
+                    }
+                }
+
+                return result; 
+            }
+         }
+         else {
+            console.error("A or B arent Matrix");
+        }
+
+    }
+
     static multiply(A, B) {
         if (A instanceof Matrix && B instanceof Matrix) {
             if (A.cols !== B.rows) {
-                console.error('Columns of A must match rows of B');
+                console.log('Columns of A must match rows of B');
             }
             else {
                 let result = new Matrix(A.rows, B.cols);
@@ -198,7 +250,16 @@ if (rows instanceof Array && rows[0] instanceof Array) {
             return result;
         }
         else {
-            console.error('Tranpose must be on a Matrix');
+            console.log('Tranpose must be on a Matrix');
+        }
+    }
+
+    static map(A, apply) {
+        if (A instanceof Matrix) {
+            return new Matrix(A).map(apply);
+        }
+        else {
+            console.error('First argument must be a Matrix');
         }
     }
 }
