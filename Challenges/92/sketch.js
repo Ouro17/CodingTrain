@@ -76,6 +76,9 @@ const changeData = (value) => {
         case 'XOR':
             data_set = XOR;
             break;
+        case 'XNOR':
+            data_set = XNOR;
+            break;
     }
 
     reset();
@@ -211,5 +214,24 @@ const XOR = [
     {
         inputs: [1, 1],
         outputs: [0]
+    }
+];
+
+const XNOR = [
+    {
+        inputs: [0, 0],
+        outputs: [1]
+    },
+    {
+        inputs: [0, 1],
+        outputs: [0]
+    },
+    {
+        inputs: [1, 0],
+        outputs: [0]
+    },
+    {
+        inputs: [1, 1],
+        outputs: [1]
     }
 ];
