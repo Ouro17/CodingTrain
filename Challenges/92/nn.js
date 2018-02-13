@@ -186,7 +186,7 @@ class NeuralNetwork {
         a.remove();
     }
 
-     setLearningRate(value) {
+    setLearningRate(value) {
         this.learning_rate = (value > 0) ? value : 0.1;
     }
 }
