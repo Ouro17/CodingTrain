@@ -3,13 +3,12 @@ let nn;
 let train;
 
 function setup() {
-   // train = xor;
-
-   train = numbers;
+   train = xor;
+   // train = numbers;
 }
 
 function numbers() {
-    // createCanvas(400, 200);
+    createCanvas(400, 200);
     
     if (undefined === nn) {
         nn = new NeuralNetwork(784, [64], 10, 0.1);
@@ -64,7 +63,15 @@ function train_images(train_index) {
 
 const save = () => {
     if (undefined !== nn) {
-        nn.save();
+        let a = document.createElement('a');
+        a.href = 'data:' + 'data:text/json;charset=utf8,' + encodeURIComponent(nn.serialize());
+        a.download = 'nn.json';
+        a.innerHTML = 'download JSON';
+
+        // let container = document.getElementById('container');
+        document.getElementsByTagName('body')[0].appendChild(a);
+        a.click();
+        a.remove();
     }
     else {
         alert('Cant save without training or loading!');
@@ -89,7 +96,6 @@ const load = (files) => {
     fr.readAsText(files[0]);
 }
 
-
 const xor = () => {
     const training_data = [
         {
@@ -112,6 +118,7 @@ const xor = () => {
 
     if (undefined == nn) {
         nn = new NeuralNetwork(2, [3, 2], 1, 0.1);
+        nn.setActivactionFunction(tanh);
     }
 
     for (let i = 0; i < 100000; ++i) {
