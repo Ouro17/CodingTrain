@@ -1,43 +1,85 @@
-
-let bird;
-const pipes = [];
+const TOTAL    = 250;
+const birds    = [];
+let savedBirds = []
+let pipes      = [];
+let counter    = 0;
+let slider;
 
 function setup () {
     createCanvas(640, 480);
-    bird = new Bird(64, height / 2, 32, 32);
+
+    slider = createSlider(1, 100, 1);
+
+    for(let i = 0; i < TOTAL; ++i) {
+        birds.push(new Bird());
+    }
 
     pipes.push(new Pipe());
 }
 
 function draw() {
-    background(0);
-
-    for (let i = pipes.length - 1; i >= 0; --i) {
-        pipes[i].update();
-        
-
-        if (pipes[i].hits(bird)) {
-            pipes[i].hightlight = true;
-            console.warn('HIT!!');
+    for (let n = 0; n < slider.value(); ++n) {
+        if (0 == (counter % 75)) {
+            pipes.push(new Pipe());
         }
 
-        pipes[i].show();
+        counter++;
 
-        if (pipes[i].offscreen()) {
-            pipes.splice(i, 1);
+        for (let i = pipes.length - 1; i >= 0; --i) {
+            pipes[i].update();
+            
+            for (let j = birds.length - 1; j >= 0; --j) {
+                if (pipes[i].hits(birds[j])) {
+                    pipes[i].hightlight = true;
+                    savedBirds.push(birds.splice(j, 1)[0]);
+                }
+            }
+
+            if (pipes[i].offscreen()) {
+                pipes.splice(i, 1);
+            }
+        }
+
+        for (let i = birds.length - 1; i >= 0; --i) {
+            if (birds[i].offscreen()) {
+                savedBirds.push(birds.splice(i, 1)[0]);
+            }
+        }
+
+        for(let bird of birds) {
+            bird.think(pipes);
+            bird.update();
+        }
+
+        if (0 == birds.length) {
+            nextGeneration();
+            pipes = [];
+            counter = 0;
         }
     }
 
-    bird.update();
-    bird.show();
+    // Draw stuff
+    background(0);
 
-    if (0 == (frameCount % 75)) {
-        pipes.push(new Pipe());
+    for (let bird of birds) {
+        bird.show();
+    }
+
+    for (let pipe of pipes) {
+        pipe.show();
     }
 }
 
-// function keyPressed() {
-//     if (key == ' ') {
-//         bird.up();
-//     }
-// }
+function keyPressed() {
+    if (key === 'S') {
+        let bird = birds[0];
+        // let json = bird.brain.serialize();
+
+        saveJSON(bird.brain, 'bird.json');
+        console.log(json);
+    }
+}
+
+function preload() {
+    let birdBrain = loadJSON('bestBird.json');
+}

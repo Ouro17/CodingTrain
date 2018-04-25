@@ -8,19 +8,23 @@ class NeuralNetwork {
             this.output_nodes  = a.output_nodes;
             this.learning_rate = a.learning_rate;
             this.weights = [];
-
-            for(let data of a.weights) {
-                this.weights.push(new Matrix(data.data));
-            }
-
             this.biases = [];
 
-            for(let data of a.bias) {
-                this.biases.push(new Matrix(data.data));
+            if (a instanceof NeuralNetwork) {
+                a.weights.forEach(matrix => this.weights.push(matrix.duplicate()));
+                a.biases.forEach(matrix => this.biases.push(matrix.duplicate()));
+            }
+            else {
+                for(let data of a.weights) {
+                    this.weights.push(new Matrix(data.data));
+                }
+
+                for(let data of a.biases) {
+                    this.biases.push(new Matrix(data.data));
+                }
             }
 
-            // TODO pass the activation function?
-            this.setActivactionFunction();
+            this.setActivactionFunction(a.activation_function);
         }
         else {
             this.input_nodes  = a;
@@ -40,14 +44,9 @@ class NeuralNetwork {
             // Last layer        
             this.weights.push(new Matrix(this.output_nodes, this.hidden_nodes[this.hidden_nodes.length - 1], true));
 
-            // this.weights_ih = new Matrix(this.hidden_nodes, this.input_nodes, true);
-            // this.weights_ho = new Matrix(this.output_nodes, this.hidden_nodes, true);
-
             this.biases = [];
 
-            for(const data of this.hidden_nodes) {
-                this.biases.push(new Matrix(data, 1, true));
-            }
+            this.hidden_nodes.forEach(data => this.biases.push(new Matrix(data, 1, true)));
 
             // Last bias
             this.biases.push(new Matrix(this.output_nodes, 1, true));
@@ -56,12 +55,12 @@ class NeuralNetwork {
 
             this.times_trained = 0;
 
+            // TODO pass the activation function?
             this.setActivactionFunction();
         }
     }
 
     predict(input_array) {
-
         const layers = [];
 
         layers.push(
@@ -181,7 +180,15 @@ class NeuralNetwork {
     }
 
     serialize() {
-        return JSON.stringify(nn);
+        return JSON.stringify(this);
+    }
+
+    static deserialize(data) {
+        if (typeof data == 'string') {
+          data = JSON.parse(data);
+        }
+
+        return new NeuralNetwork(data);
     }
 
     setLearningRate(value) {
@@ -196,18 +203,9 @@ class NeuralNetwork {
         return new NeuralNetwork(this);
     }
 
-    mutate(rate) {
-        const mutation = val => {
-            return (Math.random() < rate) ? ((Math.random() * 2) - 1) : val;
-        }
-
-        for (const matrix of this.weights) {
-            matrix.map(mutation);
-        }
-
-        for (const bias of this.biases) {
-            bias.map(mutation);
-        }
+    mutate(func) {
+        this.weights.forEach(matrix => matrix.map(mutation));
+        this.biases.forEach(bias => bias.map(mutation));
     }
 }
 
