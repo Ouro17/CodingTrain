@@ -79,7 +79,3 @@ function keyPressed() {
         console.log(json);
     }
 }
-
-function preload() {
-    let birdBrain = loadJSON('bestBird.json');
-}
