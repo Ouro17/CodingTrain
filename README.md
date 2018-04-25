@@ -12,6 +12,7 @@ cubes for you :)
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
 
 - 27   [Fireworks!](https://ouro17.github.io/CodingTrain/Challenges/27/)
+- 31   [Flappy Bird](https://ouro17.github.io/CodingTrain/Challenges/31/)
 - 55   [Mathematical Rose Patterns](https://ouro17.github.io/CodingTrain/Challenges/55/)
 - 56   [Attraction and Repulsion Forces](https://ouro17.github.io/CodingTrain/Challenges/56/)
 <!-- - 57. [Mapping Earthquake Data](https://ouro17.github.io/CodingTrain/Challenges/57/)-->
@@ -27,6 +28,7 @@ cubes for you :)
 - 92   [XOR Problem](https://ouro17.github.io/CodingTrain/Challenges/92/)
 - 98   [Quadtree](https://ouro17.github.io/CodingTrain/Challenges/98/)
 - 99   [Neural Network Color Predictor](https://ouro17.github.io/CodingTrain/Challenges/99/)
+- 100   [Neuroevolution Flappy Bird ](https://ouro17.github.io/CodingTrain/Challenges/100/)
 
 ## Guess
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bYBG4PsCJpsvMka3boE9pR)
