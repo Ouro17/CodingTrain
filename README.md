@@ -35,6 +35,8 @@ cubes for you :)
 
 - 4 [Matrix Digital Rain](https://ouro17.github.io/CodingTrain/guess/4/)
 
+# Tutorials
+
 ## Foundations of Programming in Javascript
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
 - 1.2 [p5.js with Brackets](https://ouro17.github.io/CodingTrain/tutorial/1/2/)
@@ -47,6 +49,11 @@ cubes for you :)
 - 5.19 [Matter.js: Deleting Bodies](https://ouro17.github.io/CodingTrain/tutorial/5/19/)
 - 5.20 [Matter.js: Constraints](https://ouro17.github.io/CodingTrain/tutorial/5/20/)
 - 5.21 [Matter.js: Constraints](https://ouro17.github.io/CodingTrain/tutorial/5/21/)
+
+## Intelligence and Learning
+[Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YJ3XfHhT2Mm4Y5I99nrIKX)
+
+- 6.2 [TensorFlow.js: Tensors - Intelligence and Learning](https://ouro17.github.io/CodingTrain/tutorial/6/2/)
 
 ## Neural Networks - The Nature of Code
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh)
