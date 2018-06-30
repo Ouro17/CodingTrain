@@ -47,7 +47,7 @@ cubes for you :)
 ## Intelligence and Learning
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YJ3XfHhT2Mm4Y5I99nrIKX)
 
-- 6.2 [TensorFlow.js: Tensors - Intelligence and Learning](https://ouro17.github.io/CodingTrain/tutorial/6/2/)
+- 6.4 [TensorFlow.js: Tensors - Intelligence and Learning](https://ouro17.github.io/CodingTrain/tutorial/6/4/)
 
 ## Neural Networks - The Nature of Code
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh)
@@ -55,6 +55,15 @@ cubes for you :)
 - 10.13 [Neural Networks: Feedforward Algorithm - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/10/13/)
 - 10.18 [Neural Networks: Backpropagation - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/10/18/)
 - 11.2  [Neuroevolution: Crossover and Mutation - The Nature of Code](https://ouro17.github.io/CodingTrain/tutorial/11/2/)
+
+## Topics of JavaScript
+[Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YgpA3Oht-7B4NBQwFVe3pr)
+- 16.11  [Promises Part 1] (https://ouro17.github.io/CodingTrain/tutorial/16/11/)
+- 16.12  [Promises Part 2] (https://ouro17.github.io/CodingTrain/tutorial/16/12/)
+- 16.13  [async/await Part 1] (https://ouro17.github.io/CodingTrain/tutorial/16/13/)
+- 16.14  [async/await Part 2] (https://ouro17.github.io/CodingTrain/tutorial/16/14/)
+- 16.15  [Promise.all()] (https://ouro17.github.io/CodingTrain/tutorial/16/15/)
+- 16.16  [try / catch with Promises] (https://ouro17.github.io/CodingTrain/tutorial/16/16/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)
