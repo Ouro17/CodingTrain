@@ -58,12 +58,12 @@ cubes for you :)
 
 ## Topics of JavaScript
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YgpA3Oht-7B4NBQwFVe3pr)
-- 16.11  [Promises Part 1] (https://ouro17.github.io/CodingTrain/tutorial/16/11/)
-- 16.12  [Promises Part 2] (https://ouro17.github.io/CodingTrain/tutorial/16/12/)
-- 16.13  [async/await Part 1] (https://ouro17.github.io/CodingTrain/tutorial/16/13/)
-- 16.14  [async/await Part 2] (https://ouro17.github.io/CodingTrain/tutorial/16/14/)
-- 16.15  [Promise.all()] (https://ouro17.github.io/CodingTrain/tutorial/16/15/)
-- 16.16  [try / catch with Promises] (https://ouro17.github.io/CodingTrain/tutorial/16/16/)
+- 16.11 [Promises Part 1](https://ouro17.github.io/CodingTrain/tutorial/16/11/)
+- 16.12 [Promises Part 2](https://ouro17.github.io/CodingTrain/tutorial/16/12/)
+- 16.13 [async/await Part 1](https://ouro17.github.io/CodingTrain/tutorial/16/13/)
+- 16.14 [async/await Part 2](https://ouro17.github.io/CodingTrain/tutorial/16/14/)
+- 16.15 [Promise.all()](https://ouro17.github.io/CodingTrain/tutorial/16/15/)
+- 16.16 [try / catch with Promises](https://ouro17.github.io/CodingTrain/tutorial/16/16/)
 
 ## Additional Topics
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZmA-d3D0iFIvgrB5_7kB8H)
