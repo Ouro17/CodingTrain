@@ -25,6 +25,7 @@ cubes for you :)
 - 98 [Quadtree](https://ouro17.github.io/CodingTrain/Challenges/98/)
 - 99 [Neural Network Color Predictor](https://ouro17.github.io/CodingTrain/Challenges/99/)
 - 100 [Neuroevolution Flappy Bird](https://ouro17.github.io/CodingTrain/Challenges/100/)
+- 104 [Linear Regression with TensorFlow.js](https://ouro17.github.io/CodingTrain/Challenges/104/)
 - 107 [Sandpiles](https://ouro17.github.io/CodingTrain/Challenges/107/)
 - 108 [Barnsley Fern](https://ouro17.github.io/CodingTrain/Challenges/108/)
 
