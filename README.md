@@ -54,6 +54,11 @@ cubes for you :)
 
 - 6.4 [TensorFlow.js: Tensors - Intelligence and Learning](https://ouro17.github.io/CodingTrain/tutorial/6/4/)
 
+## TensorFlow.js Color Classifier - Intelligence and Learning
+[Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bmMRCIoTi72aNWHo7epX4L)
+
+- 7 [TensorFlow.js Color Classifier](https://ouro17.github.io/CodingTrain/tutorial/7/)
+
 ## Neural Networks - The Nature of Code
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh)
 - 10.11 [Neural Networks: Matrix Class](https://ouro17.github.io/CodingTrain/tutorial/10/11/)
