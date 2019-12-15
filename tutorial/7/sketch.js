@@ -1,4 +1,3 @@
-
 let r, g, b;
 let rgbDiv, bodyElement;
 let ready = false;
@@ -10,20 +9,20 @@ function setup() {
 
     // Initialize Firebase
     const config = {
-        apiKey: "AIzaSyCdgTB9Y4PKz4Svdyg_Nxq2g7ZrHqew1dw",
-        authDomain: "crowdsource-color-65213.firebaseapp.com",
-        databaseURL: "https://crowdsource-color-65213.firebaseio.com",
-        projectId: "crowdsource-color-65213",
-        storageBucket: "crowdsource-color-65213.appspot.com",
-        messagingSenderId: "279620511487"
+        apiKey: 'AIzaSyCdgTB9Y4PKz4Svdyg_Nxq2g7ZrHqew1dw',
+        authDomain: 'crowdsource-color-65213.firebaseapp.com',
+        databaseURL: 'https://crowdsource-color-65213.firebaseio.com',
+        projectId: 'crowdsource-color-65213',
+        storageBucket: 'crowdsource-color-65213.appspot.com',
+        messagingSenderId: '279620511487'
     };
 
     firebase.initializeApp(config);
     database = firebase.database();
     authPromise = firebase.auth().signInAnonymously();
 
-    createCanvas(100, 100).parent("#root");
-    rgbDiv = createDiv().parent("#root");
+    createCanvas(100, 100).parent('#root');
+    rgbDiv = createDiv().parent('#root');
 
     createCanvas(200, 200).parent('#root');
     rgbDiv = createDiv().parent('#root');
@@ -32,6 +31,8 @@ function setup() {
     pickColor();
     ready = true;
     rgbDiv.html(`R:${r} G:${g} B:${b}`);
+
+    createP('What color do you think this is?').parent('#root');
 
     buttons.push(createButton('red-ish').parent('#root').class('red-ish'));
     buttons.push(createButton('green-ish').parent('#root').class('green-ish'));
@@ -90,17 +91,10 @@ async function sendData() {
     pickColor();
 }
 
-function loadData() {
-  return database
-    .ref("/colors/")
-    .once("value")
-    .then(snapshot => Object.values(snapshot.val()));
-}
-
 function showLoading() {
   select('.loading').show();
   select('canvas').hide();
-  for (button of buttons) button.addClass("disabled");
+  for (button of buttons) button.addClass('disabled');
   ready = false;
 }
 
@@ -108,25 +102,6 @@ function hideLoading() {
   select('.loading').hide();
   select('canvas').show();
   rgbDiv.html(`R:${r} G:${g} B:${b}`);
-  for (button of buttons) button.removeClass("disabled");
+  for (button of buttons) button.removeClass('disabled');
   setTimeout(function(){ ready = true;}, 600);
 }
-
-
-// function gotData(err, results) {
-//     console.log(results);
-//     let data = results.val();
-
-//     let keys = Objects.keys(data);
-
-//     let uid_bycount = {};
-
-//     for (let key of keys) {
-//         let record = data[key];
-//         let id = record.uid;
-
-//         (!uid_bycount[id]) ? uid_bycount[id] = 1 : uid_bycount[id]++;
-//     }
-
-
-// }

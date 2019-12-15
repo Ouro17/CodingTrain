@@ -30,6 +30,8 @@ cubes for you :)
 - 106 [XOR Problem with TensorFlow.js](https://ouro17.github.io/CodingTrain/Challenges/106/)
 - 107 [Sandpiles](https://ouro17.github.io/CodingTrain/Challenges/107/)
 - 108 [Barnsley Fern](https://ouro17.github.io/CodingTrain/Challenges/108/)
+- 149 [Tic Tac Toe](https://ouro17.github.io/CodingTrain/Challenges/149/)
+- 154 [Tic Tac Toe AI with Minimax](https://ouro17.github.io/CodingTrain/Challenges/154/)
 
 ## Guess
 [Youtube videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bYBG4PsCJpsvMka3boE9pR)
